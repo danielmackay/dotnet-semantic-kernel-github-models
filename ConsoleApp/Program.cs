@@ -1,13 +1,9 @@
-﻿// See https://aka.ms/new-console-template for more information
-
-using Microsoft.Extensions.Configuration;
+﻿using Microsoft.Extensions.Configuration;
 using Microsoft.SemanticKernel;
 using Microsoft.SemanticKernel.ChatCompletion;
 using OpenAI;
 using System.ClientModel;
 using System.Text;
-
-Console.WriteLine("Hello, World!");
 
 var config = new ConfigurationBuilder().AddUserSecrets<Program>().Build();
 var modelId = "Phi-3.5-mini-instruct";
